@@ -22,54 +22,53 @@
 
   const reviewList: ReviewProps[] = [
     {
-    image: "https://github.com/shadcn.png",
-    name: "John Doe",
-    userName: "Product Manager",
-    comment:
-      "Wow Vue + Shadcn-Vue is awesome!. This template lets me change colors, fonts and images to match my brand identity. ",
-    rating: 5.0,
-  },
-  {
-    image: "https://github.com/shadcn.png",
-    name: "Sophia Collins",
-    userName: "Cybersecurity Analyst",
-    comment:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. ",
-    rating: 4.8,
-  },
-
-  {
-    image: "https://github.com/shadcn.png",
-    name: "Adam Johnson",
-    userName: "Chief Technology Officer",
-    comment:
-      "Lorem ipsum dolor sit amet,exercitation. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    rating: 4.9,
-  },
-  {
-    image: "https://github.com/shadcn.png",
-    name: "Ethan Parker",
-    userName: "Data Scientist",
-    comment:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod labore et dolore magna aliqua. Ut enim ad minim veniam.",
-    rating: 5.0,
-  },
-  {
-    image: "https://github.com/shadcn.png",
-    name: "Ava Mitchell",
-    userName: "IT Project Manager",
-    comment:
-      "Lorem ipsum dolor sit amet, tempor incididunt  aliqua. Ut enim ad minim veniam, quis nostrud incididunt consectetur adipiscing elit.",
-    rating: 5.0,
-  },
-  {
-    image: "https://github.com/shadcn.png",
-    name: "Isabella Reed",
-    userName: "DevOps Engineer",
-    comment:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    rating: 4.9,
-  },
+      image: "https://github.com/shadcn.png",
+      name: "Sarah Chen",
+      userName: "Frontend Developer",
+      comment:
+        "This SvelteKit landing page template by Memet Zx is exactly what I needed! The conversion from Vue to Svelte is seamless and the components are well-organized.",
+      rating: 5.0,
+    },
+    {
+      image: "https://github.com/zxce3.png",
+      name: "Memet Zx",
+      userName: "Creator & Developer",
+      comment:
+        "I created this template to help developers quickly build beautiful landing pages with SvelteKit and Shadcn. Hope you find it useful!",
+      rating: 5.0,
+    },
+    {
+      image: "https://github.com/shadcn.png",
+      name: "Alex Rivera",
+      userName: "Full Stack Developer",
+      comment:
+        "Zxce3's implementation of Shadcn components in SvelteKit is brilliant. The dark mode feature and responsive design work flawlessly.",
+      rating: 4.9,
+    },
+    {
+      image: "https://github.com/shadcn.png",
+      name: "Emily Watson",
+      userName: "UI/UX Designer",
+      comment:
+        "The attention to detail in this template is impressive. Memet has done an excellent job maintaining the design aesthetics while converting to SvelteKit.",
+      rating: 5.0,
+    },
+    {
+      image: "https://github.com/shadcn.png",
+      name: "David Kim",
+      userName: "Web Developer",
+      comment:
+        "This is now my go-to template for SvelteKit projects. The documentation is clear and the implementation by Zxce3 is top-notch.",
+      rating: 4.9,
+    },
+    {
+      image: "https://github.com/shadcn.png",
+      name: "Lisa Chen",
+      userName: "Software Engineer",
+      comment:
+        "Thanks to Memet's template, I was able to launch my landing page in record time. The TypeScript integration is particularly well done.",
+      rating: 5.0,
+    },
   ];
 
   let api = $state<CarouselAPI>();

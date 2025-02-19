@@ -141,7 +141,7 @@
     <Button size="sm" variant="ghost" aria-label="View on GitHub">
       <a
         aria-label="View on GitHub"
-        href="https://github.com/leoMirandaa/shadcn-vue-landing-page.git"
+        href="https://github.com/zxce3/shadcn-sveltekit-landing-page.git"
         target="_blank"
       >
         <GithubIcon class_="size-5" />
