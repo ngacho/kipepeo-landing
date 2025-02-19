@@ -1,31 +1,75 @@
-# sv
+# Shadcn/Svelte Landing Page Template
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+### This is a project conversion from <a href="https://github.com/leoMirandaa/shadcn-vue-landing-page" target="_blank">Shadcn-Vue</a> to SvelteKit
 
-## Creating a project
+## <a href="https://www.shadcn-svelte.com/" target="_blank">Shadcn-Svelte</a> + <a href="https://kit.svelte.dev/" target="_blank">SvelteKit</a> + <a href="https://www.typescriptlang.org/" target="_blank">TypeScript</a> + <a href="https://tailwindcss.com/" target="_blank">Tailwind</a>.
 
-If you're seeing this, you've probably already done this step. Congrats!
+![alt text](./static/demo-image.png)
+
+Live demo is now available: <a href="https://shadcn-sveltekit-landing-page.zxce3.net" target="_blank">Live Demo</a>
+
+## Sections
+
+- [x] Navbar
+- [x] Sidebar(mobile)
+- [x] Hero
+- [x] Sponsors
+- [x] Benefits
+- [x] Features
+- [x] Services
+- [x] HowItWorks
+- [x] Testimonials
+- [x] Pricing
+- [x] Frequently Asked Questions(FAQ)
+- [x] Team
+- [x] Community
+- [x] Contact
+- [x] Footer
+
+## Features
+
+- [x] Fully Responsive Design
+- [x] User Friendly Navigation
+- [x] Dark Mode
+- [x] Meta tags
+
+## How to install
+
+1. Clone this repository:
 
 ```bash
-# create a new project in the current directory
-npx sv create
-
-# create a new project in my-app
-npx sv create my-app
+git clone https://github.com/zxce3/shadcn-sveltekit-landing-page.git
 ```
 
-## Developing
+2. Go into project
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+```bash
+cd shadcn-sveltekit-landing-page
+```
+
+3. Install dependencies
+
+```bash
+npm install
+# or
+pnpm install
+# or
+yarn install
+```
+
+4. Run development server
 
 ```bash
 npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
+# or
+pnpm dev
+# or
+yarn dev
 ```
 
-## Building
+5. Open your browser and visit `http://localhost:5173`
+
+## Building for Production
 
 To create a production version of your app:
 
@@ -33,6 +77,10 @@ To create a production version of your app:
 npm run build
 ```
 
-You can preview the production build with `npm run preview`.
+You can preview the production build with:
 
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+```bash
+npm run preview
+```
+
+> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
