@@ -5,15 +5,14 @@
     import { mode } from "mode-watcher";
     import { onMount } from 'svelte';
 
-    let imageSrc = '/hero-image-light.jpg';
+    let imageSrc = 'hero-image-light.jpg';
     
     onMount(() => {
         mode.subscribe(currentMode => {
-            imageSrc = currentMode === 'dark' ? '/hero-image-dark.jpg' : '/hero-image-light.jpg';
+            imageSrc = currentMode === 'dark' ? 'hero-image-dark.jpg' : 'hero-image-light.jpg';
         });
     });
 
-    $: isDark = $mode === "dark";
 </script>
 
 <section class="container">
