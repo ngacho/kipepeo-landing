@@ -26,7 +26,7 @@
           <h3 class="text-2xl">Kipepeo Foundation</h3>
         </a>
         <p class="text-sm text-muted-foreground">
-          We are a nonprofit fighting poverty, disease, and inequity around the world through education, health, and integrated livelihood programmes.
+          We are a nonprofit fighting poverty, disease, and inequity in Kenya through education, health, and integrated livelihood programmes.
         </p>
       </div>
 

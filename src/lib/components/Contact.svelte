@@ -31,7 +31,7 @@
     const { firstName, lastName, email, subject, message } = contactForm;
     console.log(contactForm);
 
-    const mailToLink = `mailto:leomirandadev@gmail.com?subject=${subject}&body=Hello I am ${firstName} ${lastName}, my Email is ${email}. %0D%0A${message}`;
+    const mailToLink = `mailto:brandonngacho@gmail.com?subject=${subject}&body=Hello I am ${firstName} ${lastName}, my Email is ${email}. %0D%0A${message}`;
     window.location.href = mailToLink;
   }
 
