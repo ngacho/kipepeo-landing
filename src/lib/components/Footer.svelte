@@ -56,11 +56,11 @@
         <p>
           &copy; {new Date().getFullYear()} Kipepeo Foundation. All rights reserved.
         </p>
-        <ul class="flex gap-4">
-          <li><a href="/terms-conditions" class="hover:underline">Terms &amp; Conditions</a></li>
-          <li><a href="/privacy-policy" class="hover:underline">Privacy Policy</a></li>
-          <li><a href="/talk-to-us" class="hover:underline">Contact Us</a></li>
-        </ul>
+        <!-- <ul class="flex gap-4">
+          <li><a href="#terms-conditions" class="hover:underline">Terms &amp; Conditions</a></li>
+          <li><a href="#privacy-policy" class="hover:underline">Privacy Policy</a></li>
+          <li><a href="#talk-to-us" class="hover:underline">Contact Us</a></li>
+        </ul> -->
       </div>
     </section>
   </div>
