@@ -41,12 +41,12 @@
       </div>
 
       <!-- About Us Links -->
-      <div class="flex flex-col gap-2">
+      <!-- <div class="flex flex-col gap-2">
         <h3 class="font-bold text-lg">About Us</h3>
         <div><a href="/our-partners" class="opacity-60 hover:opacity-100">Partners</a></div>
         <div><a href="/media" class="opacity-60 hover:opacity-100">Media</a></div>
         <div><a href="/talk-to-us" class="opacity-60 hover:opacity-100">Talk To Us</a></div>
-      </div>
+      </div> -->
     </div>
     
     <Separator class="my-6" />
