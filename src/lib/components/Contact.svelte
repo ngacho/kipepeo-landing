@@ -47,56 +47,15 @@
 </script>
 
 <section id="contact" class="container py-24 sm:py-32">
-  <section class="grid grid-cols-1 md:grid-cols-2 gap-8">
-    <div>
-      <div class="mb-4">
-        <h2 class="text-lg text-primary mb-2 tracking-wider">Contact</h2>
-        <h2 class="text-3xl md:text-4xl font-bold">Connect With Us</h2>
-      </div>
-      <p class="mb-8 text-muted-foreground lg:w-5/6">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
-        ipsam sint enim exercitationem ex autem corrupti quas tenetur
-      </p>
+  <div class="text-center mb-12">
+    <h2 class="text-lg text-primary tracking-wider uppercase">Contact</h2>
+    <h2 class="text-3xl md:text-4xl font-bold">Connect With Us</h2>
+    <p class="mt-4 text-muted-foreground max-w-xl mx-auto">
+      Have a question or want to get involved? Fill out the form below and we’ll get back to you shortly.
+    </p>
+  </div>
 
-      <div class="flex flex-col gap-4">
-        <div>
-          <div class="flex gap-2 mb-1">
-            <Building2 />
-            <div class="font-bold">Find Us</div>
-          </div>
-          <div>742 Evergreen Terrace, Springfield, IL 62704</div>
-        </div>
-
-        <div>
-          <div class="flex gap-2 mb-1">
-            <Phone />
-            <div class="font-bold">Call Us</div>
-          </div>
-          <div>+1 (619) 123-4567</div>
-        </div>
-
-        <div>
-          <div class="flex gap-2 mb-1">
-            <Mail />
-            <div class="font-bold">Mail Us</div>
-          </div>
-          <div>leomirandadev@gmail.com</div>
-        </div>
-
-        <div>
-          <div class="flex gap-2 mb-1">
-            <Clock />
-            <div class="font-bold">Visit Us</div>
-          </div>
-          <div>
-            <div>Monday - Friday</div>
-            <div>8AM - 4PM</div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Form -->
+  <div class="max-w-3xl mx-auto">
     <Card class="bg-muted/60 dark:bg-card">
       <CardHeader class="text-primary text-2xl" />
       <CardContent>
@@ -107,7 +66,7 @@
               <Input
                 id="firstName"
                 type="text"
-                placeholder="Leopoldo"
+                placeholder="Jane"
                 bind:value={contactForm.firstName}
               />
             </div>
@@ -117,7 +76,7 @@
               <Input
                 id="lastName"
                 type="text"
-                placeholder="Miranda"
+                placeholder="Doe"
                 bind:value={contactForm.lastName}
               />
             </div>
@@ -128,7 +87,7 @@
             <Input
               id="contactEmail"
               type="email"
-              placeholder="leomirandadev@gmail.com"
+              placeholder="you@example.com"
               bind:value={contactForm.email}
             />
           </div>
@@ -174,7 +133,6 @@
           <Button class="mt-4">Send message</Button>
         </form>
       </CardContent>
-      <CardFooter />
     </Card>
-  </section>
+  </div>
 </section>

@@ -1,5 +1,5 @@
 <script>
-    import Benefits from "$lib/components/Benefits.svelte";
+    import Pillars from "$lib/components/Pillars.svelte";
     import Community from "$lib/components/Community.svelte";
     import Contact from "$lib/components/Contact.svelte";
     import Faq from "$lib/components/FAQ.svelte";
@@ -17,15 +17,15 @@
 
 <Navbar />
 <Hero />
-<Sponsors />
-<Benefits />
-<Features />
-<Services />
+<!-- <Sponsors /> -->
+<Pillars />
+<!-- <Features />
+<Services /> -->
 <HowItWorks />
-<Testimonials />
+<!-- <Testimonials /> -->
 <Teams />
-<Community />
-<Pricing />
+<!-- <Community /> -->
+<!-- <Pricing /> -->
 <Contact />
 <Faq />
 <Footer />

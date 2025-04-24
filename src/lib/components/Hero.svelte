@@ -1,53 +1,35 @@
-<script lang="ts">
-    import { Badge } from "$lib/components/ui/badge";
-    import { Button } from "$lib/components/ui/button";
-    import { ArrowRight } from "lucide-svelte";
-    import { mode } from "mode-watcher";
-    import { onMount } from 'svelte';
-
-    let imageSrc = 'hero-image-light.jpg';
-    
-    onMount(() => {
-        mode.subscribe(currentMode => {
-            imageSrc = currentMode === 'dark' ? 'hero-image-dark.jpg' : 'hero-image-light.jpg';
-        });
-    });
-
-</script>
-
 <section class="container">
     <div
-        class="grid place-items-center lg:max-w-screen-xl gap-8 mx-auto py-20 md:py-32"
+        class="w-[90%] md:w-[70%] lg:w-[75%] lg:max-w-screen-xl top-5 mx-auto grid place-items-center gap-8 py-20 md:py-32"
     >
         <div class="text-center space-y-8">
-            <Badge variant="outline" class="text-sm py-2">
+            <!-- <Badge variant="outline" class="text-sm py-2">
                 <span class="mr-2 text-primary">
                     <Badge>New</Badge>
                 </span>
                 <span>Design is out now!</span>
-            </Badge>
+            </Badge> -->
 
             <div
                 class="max-w-screen-md mx-auto text-center text-5xl md:text-6xl font-bold"
             >
                 <h1>
-                    Experience the
+                    Building a better
+                    
                     <span
-                        class="text-transparent bg-gradient-to-r from-[#D247BF] to-primary bg-clip-text"
+                        class="text-primary bg-clip-text"
                     >
-                        Shadcn/Svelte
+                        future
                     </span>
-                    landing page
+                    for our communities
                 </h1>
             </div>
 
             <p class="max-w-screen-sm mx-auto text-xl text-muted-foreground">
-                We're more than just a tool, we're a community of passionate
-                creators. Get access to exclusive resources, tutorials, and
-                support.
+                Kipepeo Foundation empowers communities by focusing on three core pillars: Health, Education, and Integrated Livelihoods.
             </p>
 
-            <div class="space-y-4 md:space-y-0 md:space-x-4">
+            <!-- <div class="space-y-4 md:space-y-0 md:space-x-4">
                 <Button class="w-5/6 md:w-1/4 font-bold group/arrow">
                     Get Started
                     <ArrowRight
@@ -64,7 +46,7 @@
                         Github repository
                     </a>
                 </Button>
-            </div>
+            </div> -->
         </div>
 
         <div class="relative group mt-14">
@@ -74,7 +56,7 @@
 
             <img
                 class="w-full md:w-[1200px] mx-auto rounded-lg relative rouded-lg leading-none flex items-center border border-t-2 border-t-primary/30 img-border-animation"
-                src={imageSrc}
+                src="kipepeo-children.jpg"
                 alt="dashboard using shadcn-svelte"
             />
 

@@ -10,38 +10,39 @@
   }
 
   const HowItWorksList: HowItWorksProps[] = [
-    {
-      badgeTitle: "Contribute",
-      title: "Make a Difference with Every Contribution",
-      description:
-        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem fugiat, quasi sint reiciendis quidem iure.",
-      image: "roboto.png",
-    },
-    {
-      badgeTitle: "Discover",
-      title: "Create an Impact with Every Choice",
-      description:
-        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem fugiat, sint reiciendis quidem iure veritatis optio facere tenetur.",
-      image: "runner.png",
-    },
-    {
-      badgeTitle: "Innovate",
-      title: "Make Every Action Count",
-      description:
-        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem fugiat, odit similique quasi sint.",
-      image: "pacheco.png",
-    },
-    {
-      badgeTitle: "Collaborate",
-      title: "Tackle this challenge together",
-      description:
-        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem fugiat, quasi sint reiciendis quidem iure.",
-      image: "gamestation.png",
-    },
-  ];
+  {
+    badgeTitle: "Contribute",
+    title: "Fund Futures Through Education",
+    description:
+      "Your support helps us cover tuition, living expenses, and school supplies for vulnerable children—especially girls—so they can stay in school and thrive.",
+    image: "roboto.png",
+  },
+  {
+    badgeTitle: "Discover",
+    title: "See the Impact in Real Lives",
+    description:
+      "Follow the stories of women and children whose lives have been transformed through access to healthcare, education, and sustainable livelihoods.",
+    image: "runner.png",
+  },
+  {
+    badgeTitle: "Innovate",
+    title: "Support Women-Led Solutions",
+    description:
+      "We invest in innovative, community-led projects—especially those led by women—that create lasting economic opportunities and dignity.",
+    image: "pacheco.png",
+  },
+  {
+    badgeTitle: "Collaborate",
+    title: "Empower Communities Together",
+    description:
+      "Join hands with us, local leaders, and global supporters to create inclusive programs that break cycles of poverty and unlock potential.",
+    image: "gamestation.png",
+  },
+];
+
 </script>
 
-<section id="features" class="container py-24 sm:py-32">
+<section id="process" class="container py-24 sm:py-32">
   <div class="text-center mb-8">
     <h2 class="text-lg text-primary text-center mb-2 tracking-wider">
       How It Works
@@ -52,7 +53,7 @@
     </h2>
   </div>
 
-  <div class="lg:w-[80%] mx-auto relative">
+  <div class="w-[90%] md:w-[70%] lg:w-[75%] lg:max-w-screen-xl top-5 mx-auto relative">
     {#each HowItWorksList as { badgeTitle, title, description, image }, index}
       <div class="flex mb-8 items-center" class:flex-row-reverse={index % 2 !== 0}>
         <Card class="h-full bg-transparent border-0 shadow-none">

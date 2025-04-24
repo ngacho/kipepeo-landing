@@ -15,7 +15,7 @@
   } from "$lib/components/ui/sheet";
   import { Button, buttonVariants } from "$lib/components/ui/button";
   import { Separator } from "$lib/components/ui/separator";
-  import { ChevronsDown, Menu } from "lucide-svelte";
+  import { Menu } from "lucide-svelte";
   import GithubIcon from "$lib/icons/GithubIcon.svelte";
   import ToggleTheme from "$lib/components/ToggleTheme.svelte";
 
@@ -30,36 +30,38 @@
   }
 
   const routeList: RouteProps[] = [
-    { href: "#testimonials", label: "Testimonials" },
+    {href: "#pillars", label: "Our Pillars"},
+    { href: "#process", label: "How it works" },
     { href: "#team", label: "Team" },
     { href: "#contact", label: "Contact" },
     { href: "#faq", label: "FAQ" },
   ];
 
-  const featureList: FeatureProps[] = [
-    {
-      title: "Showcase Your Value ",
-      description: "Highlight how your product solves user problems.",
-    },
-    {
-      title: "Build Trust",
-      description: "Leverages social proof elements to establish trust and credibility.",
-    },
-    {
-      title: "Capture Leads",
-      description: "Make your lead capture form visually appealing and strategically.",
-    },
-  ];
 
   let isOpen = false;
+
+  import { mode } from "mode-watcher";
+    import { onMount } from 'svelte';
+
+    let imageSrc = 'kipepeo-logo-light.png';
+    
+    onMount(() => {
+        mode.subscribe(currentMode => {
+            imageSrc = currentMode === 'dark' ? 'kipepeo-logo-light.png' : 'kipepeo-logo-dark.png';
+        });
+    });
 </script>
 
 <header
-  class="w-[90%] md:w-[70%] lg:w-[75%] lg:max-w-screen-xl top-5 mx-auto sticky border z-40 rounded-2xl flex justify-between items-center p-2 bg-card shadow-md dark:shadow-dark shadow-light"
+  class="w-[90%] md:w-[70%] lg:w-[75%] lg:max-w-screen-xl top-5 mx-auto sticky border z-40 rounded-2xl flex justify-between items-center p-2 bg-card "
 >
   <a href="/" class="font-bold text-lg flex items-center">
-    <ChevronsDown class="bg-gradient-to-tr from-primary via-primary/70 to-primary rounded-lg w-9 h-9 mr-2 border text-white" />
-    ShadcnSvelte
+    <img
+    class="w-8 h-8 mx-4 rounded-lg relative leading-none flex items-center"
+    src={imageSrc}
+    alt="kipepeo logo"
+  />
+    Kipepeo Foundation
   </a>
 
   <!-- Mobile -->
@@ -73,9 +75,13 @@
         <div>
           <SheetHeader class="mb-4 ml-4">
             <SheetTitle class="flex items-center">
-              <a href="/" class="flex items-center">
-                <ChevronsDown class="bg-gradient-to-tr from-primary/70 via-primary to-primary/70 rounded-lg size-9 mr-2 border text-white" />
-                ShadcnSvelte
+              <a href="/" class="font-bold text-lg flex items-center">
+                <img
+                class="w-8 h-8 mx-2 rounded-lg relative leading-none flex items-center"
+                src={imageSrc}
+                alt="kipepeo logo"
+              />
+                Kipepeo Foundation
               </a>
             </SheetTitle>
           </SheetHeader>
@@ -99,34 +105,6 @@
     </Sheet>
   </div>
   <div class="hidden lg:flex items-center gap-1">
-    <DropdownMenu>
-      <DropdownMenuTrigger class={`${buttonVariants({ variant: "ghost", size: "default" })} text-base`}>
-       Features
-      </DropdownMenuTrigger>
-      <DropdownMenuContent class="w-[600px]">
-        <div class="grid grid-cols-2 gap-5 p-4">
-          <img
-            src="https://github.com/sveltejs.png"
-            alt="Beach"
-            class="h-full w-full rounded-md object-cover"
-          />
-          <ul class="flex flex-col gap-2">
-            {#each featureList as { title, description }}
-              <DropdownMenuItem class="rounded-md p-3 text-sm cursor-pointer">
-                <div>
-                  <p class="mb-1 font-semibold leading-none text-foreground">
-                    {title}
-                  </p>
-                  <p class="line-clamp-2 text-muted-foreground">
-                    {description}
-                  </p>
-                </div>
-              </DropdownMenuItem>
-            {/each}
-          </ul>
-        </div>
-      </DropdownMenuContent>
-    </DropdownMenu>
 
     <!-- Navigation Links -->
     {#each routeList as { href, label }}
@@ -138,15 +116,6 @@
 
   <div class="hidden lg:flex">
     <ToggleTheme />
-    <Button size="sm" variant="ghost" aria-label="View on GitHub">
-      <a
-        aria-label="View on GitHub"
-        href="https://github.com/zxce3/shadcn-sveltekit-landing-page.git"
-        target="_blank"
-      >
-        <GithubIcon class_="size-5" />
-      </a>
-    </Button>
   </div>
 </header>
 
